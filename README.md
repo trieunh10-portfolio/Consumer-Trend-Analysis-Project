@@ -4,9 +4,9 @@ Analyzed demographic trends, consumption patterns, and promotion effectiveness. 
 
 ### Data 
 - Source: Kaggle
-- Description of dataset: 2240 records, 29 columns Customer_ID, Education, MaritalStatus, Income, ...)
+- Description of dataset: 2240 records, 29 columns (ID, Year_Birth, Education, MaritalStatus, Income, ...)
 ### Tools and Technique
-- SQL Server: Cleaning, querying and analyzing data (JOINs, CTEs, Aggregate Functions, Subquery, Converting Data Types)
+- SQL Server: Cleaning (JOINs, CTEs, Aggregate Functions, Subquery, Converting Data Types)
 - Power BI: Data modeling and Visualization
 ### Implementaion
 1. Data Cleaning by SQL
@@ -14,11 +14,9 @@ Analyzed demographic trends, consumption patterns, and promotion effectiveness. 
 - Rename Column
 - Detect and remove Null values
 - Remote Duplicate
-- Pivoting
-2. Date Analyzing
-(SQL.File)
-4. Data modeling
-5. Visualization
+- Standardizing categories
+2. Data modeling
+3. Visualization
 - Create a dashboard using Power BI
 ### Result
 ### Conclusion
