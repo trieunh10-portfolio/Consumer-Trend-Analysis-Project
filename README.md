@@ -15,7 +15,17 @@ Analyzed demographic trends, consumption patterns, and promotion effectiveness. 
 - Detect and remove Null values
 - Remote Duplicate
 - Standardizing categories
-2. Data modeling
+2. Data normalization and data modeling by Power BI
+- Unpivot các cột MntWines, MntFruits, MntMeatProducts, … thành 2 cột:
+  - Category (Wine, Fruits, Meats, Sweets, …)
+  - Spending (số tiền chi tiêu tương ứng)
+- Unpivot các cột WebSpend, StoreSpend, CatalogSpend thành 2 column: Channel (Web, Store, Catalog) and Number of purchases using that channel
+- Làm tương tự với các bảng Response
+- Tách dataset đã chuẩn hóa thành các bảng Dimension và Fact trong Query Editor theo Star Schema. Trong đó:
+  - Fact Table: Spending (chi tiêu theo sản phẩm), Purchases (số lần mua theo kênh (Web/Store/Catalog), Subspend (số lần ghé Website, Recency, thời gian) and Repsonse (phản hồi chiến dịch)._
+  - Dimension table: Customers, Channel, Campaign and Products
+  - Date table: Date
+(File hình ảnh data model)
 3. Visualization
 - Create a dashboard using Power BI
 ### Result
