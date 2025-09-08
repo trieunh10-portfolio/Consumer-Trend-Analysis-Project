@@ -1,3 +1,46 @@
-## Data Cleaning of Consumer Trend Analysis Project
+# Consumer Trend Analysis Project
+## Goal
+Analyzed demographic trends, consumption patterns, and promotion effectiveness. Identified insights from high-value customers, leading to targeted marketing recommendations.
+## Data 
+- Source: Kaggle
+- Dataset: Marketing_campaign (2240 records, 29 columns)
+## Tools and Technique
+- SQL Server: Data cleaning (CTEs, Subquery, Converting Data Types), data exploration (JOINs, CTEs, Aggregate Functions, Subquery)
+- Power BI: Data modeling, DAX, and Visualization
+## Process
+1. Data Cleaning by SQL
 
-  
+Code: [Data Cleaning Consumer Trend Project.sql](https://github.com/trieunh10-portfolio/Consumer-Trend-Analysis-Project/blob/main/Data%20Cleaning%20Consumer%20Trend%20Project.sql)
+
+2. Data normalization and data modeling by Power BI
+- Transferring the cleaned dataset to the normalization form (unpivot columns MntWines, MntFruits, MntMeatProducts, WebSpend, StoreSpend, CatalogSpend, ...)
+- Separating the normalized dataset into Dimension and Fact tables in Query Editor according to the Star Schema, with:
+  - Fact Table: Spending (spending on Wine, Meats, ...), Purchases (number of purchases at Web/Store/Catalog), Subspend (number of Web visits, Recency, ...) and Repsonse (number of responses)._
+  - Dimension table: Customers, Channel, Campaign and Products
+  - Date table: Date
+
+Image of data model: [Consumer Trend Data Model.jpg](https://github.com/trieunh10-portfolio/Consumer-Trend-Analysis-Project/blob/main/Consumer%20Trend%20Data%20Model.jpg)
+
+3. Data exploration by DAX/ SQL
+
+DAX Formula: [DAX Formula of Consumer Trend.md](https://github.com/trieunh10-portfolio/Consumer-Trend-Analysis-Project/blob/main/DAX%20Formula%20of%20Consumer%20Trend.md)
+
+SQL Code: [Data Exploration Consumer Trend Project by SQL.sql](https://github.com/trieunh10-portfolio/Consumer-Trend-Analysis-Project/blob/main/Data%20Exploration%20Consumer%20Trend%20Project%20by%20SQL.sql)
+
+4. Visualization
+- Built an interactive Power BI dashboard for visualization and storytelling.
+(Link Power BI Service)
+## Results
+- The age group with the highest spending is Middle-aged (46 to 59), followed by Adult (25 to 45). The most frequently purchased products are wine, followed closely by meat.
+- The most chosen shopping channel is in-store, followed by the Website. Middle-aged and Elderly customers tend to buy more directly, while Adults frequently shop through both channels, with a notable tendency to visit the website.
+- Middle-aged and Adult customers tend to buy the most discounted products
+- Adults have the highest acceptance rate for marketing campaigns, but they have a lower purchase rate
+- The recency rate of shopping is highest among the Elderly, with both the Elderly and Youth showing the most recent shopping activity.
+## Conclusion
+- Promote wine, meats and gold, especially targeting Middle-aged individuals with high income
+- Middle-aged and Elderly customers tend to be more loyal to traditional purchasing habits and like to buy deals with discounts. Organize in-store promotions specifically for this age group.
+- Enhance marketing campaigns or increase promotions on online channels aimed at Adults
+- Maintain loyalty programs tailored for the Elderly group
+- Potential customers are likely to come from both the Youth and Elderly groups; therefore, create special purchase programs for each group.
+
+
