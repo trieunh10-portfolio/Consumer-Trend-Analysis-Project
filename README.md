@@ -7,7 +7,7 @@ Analyzed demographic trends, consumption patterns, and promotion effectiveness. 
 ### Tools and Technique
 - SQL Server: Cleaning (CTEs, Aggregate Functions, Subquery, Converting Data Types)
 - Power BI: Data modeling and Visualization
-### Implementaion
+### Process
 1. Data Cleaning by SQL
 - Convert data types
 - Rename Column
