@@ -1,16 +1,11 @@
 ## Consumer Trend Analysis
-### Description
-Analyzed demographic trends, consumption patterns, and promotion effectiveness. Identified high-value customers, leading to targeted marketing recommendations.
-## Goal
-- Hiểu phân khúc khách hàng (theo nhân khẩu học).
-- Phân tích xu hướng tiêu dùng (chi tiêu theo nhóm tuổi, thu nhập, học vấn).
-- Đo lường hiệu quả khuyến mãi và mức độ phản hồi.
-- Đưa ra insight & recommendation cho chiến lược Marketing.
+### Goal
+Analyzed demographic trends, consumption patterns, and promotion effectiveness. Identified insights from high-value customers, leading to targeted marketing recommendations.
 ### Data 
 - Source: Kaggle
-- Description of dataset: 2240 records, 29 columns (ID, Year_Birth, Education, MaritalStatus, Income, ...)
+- Dataset: Marketing_campaign (2240 records, 29 columns (ID, Year_Birth, Education, MaritalStatus, Income, ...))
 ### Tools and Technique
-- SQL Server: Cleaning (JOINs, CTEs, Aggregate Functions, Subquery, Converting Data Types)
+- SQL Server: Cleaning (CTEs, Aggregate Functions, Subquery, Converting Data Types)
 - Power BI: Data modeling and Visualization
 ### Implementaion
 1. Data Cleaning by SQL
@@ -19,19 +14,16 @@ Analyzed demographic trends, consumption patterns, and promotion effectiveness. 
 - Detect and remove Null values
 - Remote Duplicate
 - Standardizing categories
+(Link cdoe SQL)
 2. Data normalization and data modeling by Power BI
-- Unpivot các cột MntWines, MntFruits, MntMeatProducts, … thành 2 cột:
-  - Category (Wine, Fruits, Meats, Sweets, …)
-  - Spending (số tiền chi tiêu tương ứng)
-- Unpivot các cột WebSpend, StoreSpend, CatalogSpend thành 2 column: Channel (Web, Store, Catalog) and Number of purchases using that channel
-- Làm tương tự với các bảng Response
+- Đưa dataset đã được làm sạch về dạng chuẩn hóa (unpivot các cột MntWines, MntFruits, MntMeatProducts, WebSpend, StoreSpend, CatalogSpend, ...)
 - Tách dataset đã chuẩn hóa thành các bảng Dimension và Fact trong Query Editor theo Star Schema. Trong đó:
   - Fact Table: Spending (chi tiêu theo sản phẩm), Purchases (số lần mua theo kênh (Web/Store/Catalog), Subspend (số lần ghé Website, Recency, thời gian) and Repsonse (phản hồi chiến dịch)._
   - Dimension table: Customers, Channel, Campaign and Products
   - Date table: Date
 (File hình ảnh data model)
 3. Visualization
-- Create a dashboard using Power BI
+- Built an interactive Power BI dashboard for visualization and storytelling.
 ### Result
 - Nhóm khách hàng mua sắm nhiều nhất: Mid_Aged (46 - 59) và Adult (25 - 45)
 - Loại sản phẩm được mua nhiều nhất là Wine and Meat
@@ -48,7 +40,3 @@ Analyzed demographic trends, consumption patterns, and promotion effectiveness. 
 
 
   
-Cleaned and prepared dataset in Excel (Power Query, Pivot Table).
-Queried customer insights using SQL (segmentation, promotion effectiveness, purchasing patterns).
-Built interactive Power BI dashboard for visualization and storytelling.
-Delivered insights: Millennials are the highest spenders on Wine & Meat, Gen Z reacts more to promotions, Boomers prefer in-store purchases.
