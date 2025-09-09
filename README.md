@@ -3,7 +3,10 @@
 Analyzed demographic trends, consumption patterns, and promotion effectiveness. Identified insights from high-value customers, leading to targeted marketing recommendations.
 ## Data 
 - Source: Kaggle
-- Dataset: Marketing_campaign (2240 records, 29 columns)
+- Dataset: marketing_campaign (2240 records, 29 columns)
+
+- Link: [marketing_campaign](https://www.kaggle.com/datasets/imakash3011/customer-personality-analysis)
+  
 ## Tools and Technique
 - SQL Server: Data cleaning (CTEs, Subquery, Converting Data Types), data exploration (JOINs, CTEs, Aggregate Functions, Subquery)
 - Power BI: Data modeling, DAX, and Visualization
@@ -13,23 +16,26 @@ Analyzed demographic trends, consumption patterns, and promotion effectiveness. 
 Code: [Data Cleaning Consumer Trend Project.sql](https://github.com/trieunh10-portfolio/Consumer-Trend-Analysis-Project/blob/main/Data%20Cleaning%20Consumer%20Trend%20Project.sql)
 
 2. Data normalization and data modeling by Power BI
-- Transferring the cleaned dataset to the normalization form (unpivot columns MntWines, MntFruits, MntMeatProducts, WebSpend, StoreSpend, CatalogSpend, ...)
-- Separating the normalized dataset into Dimension and Fact tables in Query Editor according to the Star Schema, with:
-  - Fact Table: Spending (spending on Wine, Meats, ...), Purchases (number of purchases at Web/Store/Catalog), Subspend (number of Web visits, Recency, ...) and Repsonse (number of responses)._
-  - Dimension table: Customers, Channel, Campaign and Products
+- Transformed the cleaned dataset into a normalized format by unpivoting the columns MntWines, MntFruits, MntMeatProducts, WebSpend, StoreSpend, CatalogSpend, ...
+- Divided the normalized dataset into Dimension and Fact tables in Query Editor according to the Star Schema, with:
+  - Fact Tables: Spending (spending on Wine, Meats, ...), Purchases (number of purchases at Web/Store/Catalog), Subspend (number of Web visits, Recency, ...) and Repsonse (number of responses)._
+  - Dimension tables: Customers, Channel, Campaign and Products
   - Date table: Date
 
-Image of data model: [Consumer Trend Data Model.jpg](https://github.com/trieunh10-portfolio/Consumer-Trend-Analysis-Project/blob/main/Consumer%20Trend%20Data%20Model.jpg)
+- Image of data model: [Consumer Trend Data Model.jpg](https://github.com/trieunh10-portfolio/Consumer-Trend-Analysis-Project/blob/main/Consumer%20Trend%20Data%20Model.jpg)
 
 3. Data exploration by DAX/ SQL
 
-DAX Formula: [DAX Formula of Consumer Trend.md](https://github.com/trieunh10-portfolio/Consumer-Trend-Analysis-Project/blob/main/DAX%20Formula%20of%20Consumer%20Trend.md)
+- DAX Formula: [DAX Formula of Consumer Trend.md](https://github.com/trieunh10-portfolio/Consumer-Trend-Analysis-Project/blob/main/DAX%20Formula%20of%20Consumer%20Trend.md)
 
-SQL Code: [Data Exploration Consumer Trend Project by SQL.sql](https://github.com/trieunh10-portfolio/Consumer-Trend-Analysis-Project/blob/main/Data%20Exploration%20Consumer%20Trend%20Project%20by%20SQL.sql)
+- SQL Code: [Data Exploration Consumer Trend Project by SQL.sql](https://github.com/trieunh10-portfolio/Consumer-Trend-Analysis-Project/blob/main/Data%20Exploration%20Consumer%20Trend%20Project%20by%20SQL.sql)
 
-4. Visualization
-- Built an interactive Power BI dashboard for visualization and storytelling.
-(Link Power BI Service)
+4. Built an interactive Power BI dashboard for visualization and storytelling
+   
+- Link to dashboard: [Consumer Trend Dashboard](https://app.powerbi.com/groups/me/reports/ddbe1171-2135-4012-93ee-857513ed22b6?ctid=b1a9fdc0-1d56-4c3d-a481-809fff8a26db&pbi_source=linkShare&bookmarkGuid=470391f0-09a6-47bb-915e-0dab1dff8ec9)
+  
+- Power BI File: [Consumer Trend Project](https://github.com/trieunh10-portfolio/Consumer-Trend-Analysis-Project/blob/main/Consumer%20Trend%20Project.pbix)
+
 ## Results
 - The age group with the highest spending is Middle-aged (46 to 59), followed by Adult (25 to 45). The most frequently purchased products are wine, followed closely by meat.
 - The most chosen shopping channel is in-store, followed by the Website. Middle-aged and Elderly customers tend to buy more directly, while Adults frequently shop through both channels, with a notable tendency to visit the website.
