@@ -41,12 +41,12 @@ Code: [Data Cleaning Consumer Trend Project.sql](https://github.com/trieunh10-po
 - The most chosen shopping channel is in-store, followed by the Website. Middle-aged and Elderly customers tend to buy more directly, while Adults frequently shop through both channels, with a notable tendency to visit the website.
 - Middle-aged and Adult customers tend to buy the most discounted products
 - Adults have the highest acceptance rate for marketing campaigns, but they have a lower purchase rate
-- The recency rate of shopping is highest among the Elderly, with both the Elderly and Youth showing the most recent shopping activity.
+- The recency rate of shopping is highest among the Adults, with both the Middle-aged and Adults showing the most recent shopping activity.
 ## Conclusion
 - Promote wine, meats and gold, especially targeting Middle-aged individuals with high income
 - Middle-aged and Elderly customers tend to be more loyal to traditional purchasing habits and like to buy deals with discounts. Organize in-store promotions specifically for this age group.
 - Enhance marketing campaigns or increase promotions on online channels aimed at Adults
 - Maintain loyalty programs tailored for the Elderly group
-- Potential customers are likely to come from both the Youth and Elderly groups; therefore, create special purchase programs for each group.
+- Potential customers are likely to come from both the Middle-aged and Adult groups; therefore, create special purchase programs for each group.
 
 
