@@ -38,11 +38,11 @@ ORDER BY Total_time_purchase DESC;
 
 -- Trends in using shopping channels by age group
 SELECT Age_Group, Channel, SUM(PurchaseCount) as Total_time_purchase
-FROM Purchase pu
+FROM Purchase p
 LEFT JOIN Channel ch
-   ON pu.channel_key = ch.channel_key
+   ON p.channel_key = ch.channel_key
 LEFT JOIN Customers c
-   ON pu.customer_id = c.customer_id
+   ON p.customer_id = c.customer_id
 GROUP BY Age_group, Channel
 ORDER BY Total_time_purchase DESC;
 
@@ -59,8 +59,8 @@ ORDER BY Total_discountpur DESC;
 -- Number of responses to campaigns by age group
 SELECT Age_Group, COUNT(AcceptCount) as Total_accept
 FROM Response r
-LEFT JOIN Campaign_response cr
-   ON r.acceptkey = cr.acceptkey
+LEFT JOIN Campaign cp
+   ON r.campaign_key = cp.campaign_key
 LEFT JOIN customers c
    ON r.customer_id = c.customer_id
 WHERE AcceptCount = 1
@@ -71,7 +71,7 @@ ORDER BY total_accept DESC;
 
 -- Range of recency by Age group
 WITH Sub AS (
-SELECT age_group, recency,
+SELECT customer_id, age_group, recency,
        CASE WHEN recency <= 7 THEN 'Within 7 days'
 	        WHEN recency <= 30 THEN 'Within 30 days'
 	        WHEN recency <=60  THEN 'Within 60 days'
@@ -81,8 +81,9 @@ FROM SubSpend)
 SELECT age_group, Range_of_Recency , COUNT(Range_of_Recency) AS Recency_statistic FROM Sub 
 LEFT JOIN customers c
    ON sub.customer_id = c.customer_id
-GROUP BY age_group, Range_of_Recency
+GROUP BY age_group
 ORDER BY Recency_statistic DESC;
+
 
 
 				
