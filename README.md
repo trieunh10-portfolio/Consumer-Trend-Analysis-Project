@@ -32,7 +32,7 @@ Code: [Data Cleaning Consumer Trend Project.sql](https://github.com/trieunh10-po
 
 4. Built an interactive Power BI dashboard for visualization and storytelling
    
-- Link to dashboard: [Consumer Trend Dashboard](https://app.powerbi.com/groups/me/reports/ddbe1171-2135-4012-93ee-857513ed22b6?ctid=b1a9fdc0-1d56-4c3d-a481-809fff8a26db&pbi_source=linkShare&bookmarkGuid=470391f0-09a6-47bb-915e-0dab1dff8ec9)
+- Link to dashboard: [Consumer Trend Dashboard](https://app.powerbi.com/groups/me/reports/d5e06fdb-672a-4f68-aeea-78ec12145aca/627809e7b43119c37b2a?experience=power-bi)
   
 - Power BI File: [Consumer Trend Project](https://github.com/trieunh10-portfolio/Consumer-Trend-Analysis-Project/blob/main/Consumer%20Trend%20Project.pbix)
 
