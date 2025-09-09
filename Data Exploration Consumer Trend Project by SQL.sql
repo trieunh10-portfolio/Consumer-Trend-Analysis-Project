@@ -81,9 +81,10 @@ FROM SubSpend)
 SELECT age_group, Range_of_Recency , COUNT(Range_of_Recency) AS Recency_statistic FROM Sub 
 LEFT JOIN customers c
    ON sub.customer_id = c.customer_id
-GROUP BY age_group
+GROUP BY range_of_recency
 ORDER BY Recency_statistic DESC;
 
 
 
 				
+
