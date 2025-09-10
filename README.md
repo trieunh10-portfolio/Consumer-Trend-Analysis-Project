@@ -42,7 +42,7 @@ Code: [Data Cleaning Consumer Trend Project.sql](https://github.com/trieunh10-po
 - Middle-aged and adult customers tend to buy the most discounted products.
 - Adults have the highest acceptance rate for marketing campaigns, but they have a lower purchase rate.
 - The recency rate of shopping is highest among the adults, with both the middle-aged and adults showing the most recent shopping activity.
-## Conclusion
+## Insights
 - Promote wine, meats, and gold (especially targeting Middle-aged individuals with high income).
 - Middle-aged and elderly customers tend to be more loyal to traditional purchasing habits and like to buy deals with discounts. Organize in-store promotions specifically for this age group.
 - Enhance marketing campaigns or increase promotions on online channels aimed at adults.
