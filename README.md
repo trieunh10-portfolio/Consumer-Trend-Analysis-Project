@@ -1,6 +1,6 @@
 # Consumer Trend Analysis Project
 ## Goal
-Analyzed demographic trends, consumption patterns, and promotion effectiveness. Identified insights from high-value customers, leading to targeted marketing recommendations.
+Analyze demographic trends, consumption patterns, and promotion effectiveness. Identify insights from high-value customers, leading to targeted marketing recommendations.
 ## Data 
 - Source: Kaggle
 - Dataset: marketing_campaign (2240 records, 29 columns)
