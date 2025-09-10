@@ -34,8 +34,6 @@ Code: [Data Cleaning Consumer Trend Project.sql](https://github.com/trieunh10-po
    
 - Link to dashboard: [Consumer Trend Dashboard](https://app.powerbi.com/groups/me/reports/d5e06fdb-672a-4f68-aeea-78ec12145aca/627809e7b43119c37b2a?experience=power-bi)
   
-- Power BI File: [Consumer Trend Project](https://github.com/trieunh10-portfolio/Consumer-Trend-Analysis-Project/blob/main/Consumer%20Trend%20Project.pbix)
-
 ## Results
 - The age group with the highest spending is middle-aged (46 to 59), followed by adult (25 to 45). The most frequently purchased products are wine, followed closely by meat.
 - The most chosen shopping channel is in-store, followed by the Website. Middle-aged and elderly customers tend to buy more directly, while adults frequently shop through both channels, with a notable tendency to visit the website.
